@@ -26,6 +26,7 @@ jobs:
       - name: Build App
         run: npm run build
 
-      - name: Run vitest tests
+      # Make sure this script name matches what's in your package.json
+      # It might be 'test:component' instead of 'test-component'
+      - name: Run Cypress component tests
         run: npm run test-component
-
